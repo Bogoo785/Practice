@@ -3,6 +3,11 @@
     padding: 0;
     margin: 0;
 }
+@font-face{
+    font-family: "Zhi Mang Xing";
+    src:url(ZhiMangXing-Regular.ttf);
+    
+}
 body{
     background: rgba(140, 138, 151, 0.957);
     height: 100dvh;
@@ -50,7 +55,7 @@ margin-top: 10%;
 .content span{
     font-size:2.5rem;
     color: palevioletred;
-    font-family:fantasy;
+    font-family: "Zhi Mang Xing";
     font-weight: 600;
 }
 
