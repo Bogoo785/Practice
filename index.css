@@ -112,3 +112,13 @@ margin-top: 10%;
     display: flex;
     justify-content: center;
 }
+@media(max-width:768px){
+    .detail2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .detail{
+        width: 90%;
+    }
+}
