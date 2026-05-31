@@ -2,7 +2,7 @@ function tap(){
      window.location.href="https://google.com"
 }
 
-const targettime =new Date("2026-06-13T13:40").getTime()
+const targettime =new Date("2026-10-05T13:30").getTime()
 
 
 
