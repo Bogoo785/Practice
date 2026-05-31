@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: rgba(140, 138, 151, 0.957);
+    height: 80vh;
+}
+.contanier{
+display: flex;
+justify-content: center;
+align-items:center;
+
+overflow: hidden;
+margin-top: 10%;
+
+
+
+}
+.detail{
+    width:80% ;
+    background-color: rgba(49, 56, 153, 0.799);
+    height: 84%;
+    border-radius: 20px;
+    max-width: 600px;
+
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+.content{
+    
+    margin-bottom: 0px;
+    font-size: 2.5rem;
+    font-family: cursive;
+    color: aliceblue;
+    width: 480px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 5%;
+    
+    
+}
+.content span{
+    font-size:2.5rem;
+    color: palevioletred;
+    font-family:fantasy;
+    font-weight: 600;
+}
+
+.small{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: rgb(153, 151, 157);
+    font-weight: 600;
+}
+.detail2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.day{
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    background-color:rgb(141, 141, 221) ;
+    color: rgb(235, 230, 227);
+    font-family:initial;
+    margin: 15px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+.go{
+    margin-top: 40px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+#tail{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: blanchedalmond;
+    font-family:'Lucida Sans' ;
+}
+.out{
+    border-radius: 20px;
+    border: 1px solid blue;
+    background-color: rgb(116, 125, 239);
+    font-size: 1.3rem;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.out:hover{
+    background-color: yellowgreen;
+    transform:translateY(-10px);
+}
+.out{
+    transition: all 0.3s ease;
+}
+.last{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:768px){
+    .detail2{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .day{
+        margin: 10px;
+    }
+    .contanier{
+        margin-top: 50%;
+    }
+    
+    .content{
+        font-size: 2rem;
+    }
+    .content span{
+        font-size: 2rem;
+    }
+  .go{
+    font-size: 1.5rem;
+  }
+  .out{
+    font-size: 1.5rem;
+  }
+  #tail{
+    font-size: 1.5rem;
+  }
+  .go{
+    margin-top: 10px;
+  }
+
+}
