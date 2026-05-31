@@ -1,5 +1,5 @@
 function tap(){
-     window.location.href="https://google.com"
+     window.location.href="https://japan-psi-umber.vercel.app/catalog.html"
 }
 
 const targettime =new Date("2026-10-05T13:30").getTime()
