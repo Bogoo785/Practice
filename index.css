@@ -5,7 +5,9 @@
 }
 body{
     background: rgba(140, 138, 151, 0.957);
-    height: 80vh;
+    height: 100dvh;
+    
+    overflow: hidden;
 }
 .contanier{
 display: flex;
@@ -109,37 +111,4 @@ margin-top: 10%;
 .last{
     display: flex;
     justify-content: center;
-}
-@media (max-width:768px){
-    .detail2{
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .day{
-        margin: 10px;
-    }
-    .contanier{
-        margin-top: 50%;
-    }
-    
-    .content{
-        font-size: 2rem;
-    }
-    .content span{
-        font-size: 2rem;
-    }
-  .go{
-    font-size: 1.5rem;
-  }
-  .out{
-    font-size: 1.5rem;
-  }
-  #tail{
-    font-size: 1.5rem;
-  }
-  .go{
-    margin-top: 10px;
-  }
-
 }
