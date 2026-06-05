@@ -1,0 +1,21 @@
+.contanier{
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    align-items: center;
+}
+.box{
+    font-size: 2rem;
+    margin: 10px;
+}
+#result{
+    text-align: center;
+    font-size:2rem ;
+    color: tomato;
+}
+.box2{
+    font-size: 2rem;
+    display: block;
+    margin: 0 auto;
+    margin-top:30px; 
+}

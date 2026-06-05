@@ -131,3 +131,24 @@ margin-top: 10%;
         margin-top: 10px;
     }
 }
+a{
+    text-decoration: none;
+}
+footer{
+background-color: rgb(13, 67, 67);
+height: 10%;
+border-radius: 30px;
+width: 50%;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+}
+button{
+    background-color:yellow;
+    border-radius: 20px;
+    margin:0 10px ;
+    padding: 3px;
+    font-weight: 600;
+}
