@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* ==========================================
+   2. 主卡片容器 (輸入畫面)
+   ========================================== */
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 40px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* ==========================================
+   3. 輸入框群組與樣式
+   ========================================== */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* 控制輸入框之間的間距 */
+    margin-bottom: 30px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+    color: #444;
+}
+
+/* 輸入框聚焦效果 */
+input:focus {
+    border-color: #88b04b;
+    box-shadow: 0 0 0 4px rgba(136, 176, 75, 0.15);
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+/* ==========================================
+   4. 按鈕基本樣式與動態效果
+   ========================================== */
+button {
+    width: 100%;
+    background-color: #88b04b; /* 草綠色 */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(136, 176, 75, 0.3);
+    transition: all 0.2s ease;
+}
+
+/* 滑鼠懸停 */
+button:hover {
+    background-color: #769a3f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(136, 176, 75, 0.4);
+}
+
+/* 按鈕點擊 */
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 6px rgba(136, 176, 75, 0.3);
+}
+
+/* ==========================================
+   5. 彈出視窗 (Modal) 核心樣式
+   ========================================== */
+
+/* 遮罩背景 */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+/* 當遮罩被激活時 */
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* 視窗白底主體 */
+.modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 24px;
+    width: 85%;
+    max-width: 400px; /* 已移除錯誤程式碼 */
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    /* 預設縮小隱藏，用於縮放動畫 */
+    transform: scale(0.7);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* 當視窗被激活時的彈跳動畫 */
+.modal-overlay.active .modal-content {
+    transform: scale(1);
+}
+
+/* 視窗內元素微調 */
+.modal-icon {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    animation: float 2s ease-in-out infinite;
+}
+
+.modal-content h2 {
+    font-size: 1.4rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#resultValue {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #88b04b;
+    margin-bottom: 30px;
+    word-break: break-word;
+}
+
+/* 關閉按鈕專用（深灰色調） */
+.close-btn {
+    background-color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.close-btn:hover {
+    background-color: #111;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* 裝飾用：小圖示飄浮動畫 */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}

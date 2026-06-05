@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>選一個</title>
+    <link rel="stylesheet" href="choose.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>🤔 幫我選一個！</h1>
+        <div class="input-group">
+            <input type="text" placeholder="選項一" id="one">
+            <input type="text" placeholder="選項二" id="two">
+            <input type="text" placeholder="選項三" id="three">
+        </div>
+        <button onclick="tap()">送出決定</button>
+    </div>
+
+    <!-- 新增：彈出視窗 (Modal) -->
+    <div id="resultModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-icon">🎉</div>
+            <h2>最終決定是...</h2>
+            <p id="resultValue">選項內容</p>
+            <button class="close-btn" onclick="closeModal()">太棒了！</button>
+        </div>
+    </div>
+
+    <script src="choose.js"></script>    
+</body>
+</html>
